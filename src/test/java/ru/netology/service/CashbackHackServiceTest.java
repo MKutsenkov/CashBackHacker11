@@ -16,7 +16,6 @@ class CashbackHackServiceTest {
         // выполнение целевого действия
         int actual = service.remain(amount);
 
-        // сравнение ОР и ФР
         assertEquals(actual,expected);
     }
 
