@@ -20,6 +20,17 @@ public class CashbackHackServiceTest {
     }
 
     @Test
+    public void shouldBuyMoreThan1000() {
+        CashbackHackService service = new CashbackHackService();
+        int amount = 1100;
+
+        int actual = service.remain(amount);
+        int expected = 900;
+
+        assertEquals(actual, expected);
+    }
+
+    @Test
    public void shouldReturn0IfAmountIs1000() {
         // подготовка данных
         CashbackHackService service = new CashbackHackService();
